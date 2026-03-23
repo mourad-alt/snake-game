@@ -4,8 +4,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #2c3e50; /* Fond bleu nuit */
-    color: white;
+    background-color: #585d63;
+    color: rgba(128, 85, 85, 0.562);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -14,10 +14,9 @@ body {
 }
 
 canvas {
-    background-color: #ecf0f1; /* Fond du jeu gris clair */
-    border: 5px solid #bdc3c7;
-    border-radius: 5px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: #454546; /* Fond du jeu gris clair */
+    border: 5px solid #3b91ca;
+    border-radius: 2px;
 }
 
 h1 {

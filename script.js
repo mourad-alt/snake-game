@@ -32,6 +32,17 @@ document.addEventListener("keydown", changeDirection);
 function main() {
     if (hasGameEnded()) {
         alert("Game Over! Votre score final est de : " + score + "\nRechargez la page pour rejouer.");
+        document.getElementById('score').innerHTML = score;
+        snake = [
+            { x: 200, y: 200 },
+            { x: 180, y: 200 },
+            { x: 160, y: 200 }
+        ];
+        dx = tileSize;
+        dy = 0;
+        score = 0;
+        document.getElementById('score').innerHTML = score;
+        main();
         return;
     }
 
@@ -68,8 +79,8 @@ function drawSnake() {
 }
 
 function drawSnakePart(snakePart) {
-    ctx.fillStyle = "#2ecc71"; // Couleur du serpent (Vert)
-    ctx.strokeStyle = "#27ae60"; // Contour du serpent
+    ctx.fillStyle = "#cecece"; // Couleur du serpent (Vert)
+    ctx.strokeStyle = "#a38217"; // Contour du serpent
     ctx.fillRect(snakePart.x, snakePart.y, tileSize, tileSize);
     ctx.strokeRect(snakePart.x, snakePart.y, tileSize, tileSize);
 }
