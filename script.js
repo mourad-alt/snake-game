@@ -79,7 +79,7 @@ function drawSnake() {
 }
 
 function drawSnakePart(snakePart) {
-    ctx.fillStyle = "#cecece"; // Couleur du serpent (Vert)
+    ctx.fillStyle = "#a38217"; // Couleur du serpent (Vert)
     ctx.strokeStyle = "#a38217"; // Contour du serpent
     ctx.fillRect(snakePart.x, snakePart.y, tileSize, tileSize);
     ctx.strokeRect(snakePart.x, snakePart.y, tileSize, tileSize);
